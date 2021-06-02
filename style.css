@@ -1,0 +1,135 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background: #333333;
+}
+
+.container{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background:#FFFFFF;
+    ;
+    /* flex-flow: column nowrap; */
+}
+main{
+    height:80vh;
+    display: flex;
+    padding:2rem;
+}
+.img{
+    /* width:50vw;   */
+    flex:1 1 auto; 
+}
+img{
+    width:40vw;
+    height: 50vh;
+    margin:1rem;
+}
+.text{
+    flex:1 1 auto;
+    display: flex;
+    flex-direction: column;
+    padding:1rem;   
+}
+
+header{
+    height:10vh;
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.5625rem;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: start;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+/*First child of every .text class*/
+.text > :first-child{ 
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5.9375rem;
+    letter-spacing: -0.035em;
+    color: #333333;
+    width:45vw;
+    padding:0.25rem;  
+}
+.text> :nth-child(2)
+{
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.035em;
+    margin-top: 1rem;
+    width:30vw;
+    /* Gray 2 */
+    padding:0.25rem;
+    color: #4F4F4F;  
+}
+.text> :nth-child(3)
+{
+    background: #333333;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    /* identical to box height */
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding:0.5rem;
+    margin-top:1rem;
+    width:15vw;
+    margin-top: 2rem;
+}
+footer{
+    height: 10vh;
+    padding-top:2rem;
+    text-align: center; 
+    color:#BDBDBD; 
+}
+@media (max-width:600px){
+    html{
+        font-size:12px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        width:80vw;
+        height:30vh;
+    }
+    .text{
+        height:40vh;
+        width:80vw;
+    }
+    .text > :first-child{ 
+        width:80vw;    
+    }
+    .text> :nth-child(2)
+    {
+        width:60vw;
+        color: #4F4F4F;
+        
+    }
+    .text> :nth-child(3)
+    {
+        width:25vw;
+    }
+}
+
