@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{https://sakshijain-mca.github.io/404-not-found-master/}">
+    <a href="https://sakshijain-mca.github.io/404-not-found-master" target="_blank">
       Solution
     </a>
     <span> | </span>
